@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mosque Finder: Find Mosques Near You on a Map</title>
+  <meta name="description" content="Free mosque finder that shows mosques near you on an interactive map, using your location and OpenStreetMap data. Search any city, no app or sign-up.">
+  <link rel="canonical" href="{{SITE_URL}}">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mosque Finder: Find Mosques Near You on a Map">
+  <meta property="og:description" content="Free mosque finder that shows mosques near you on an interactive map, using your location and OpenStreetMap data. Search any city, no app or sign-up.">
+  <meta property="og:url" content="{{SITE_URL}}">
+  <meta property="og:image" content="{{SITE_URL}}og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Mosque Finder Map", "url": "{{SITE_URL}}", "applicationCategory": "TravelApplication", "operatingSystem": "Any (web browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Free mosque finder that shows mosques near you on an interactive map, using your location and OpenStreetMap data. Search any city, no app or sign-up.", "isBasedOn": "{{LINK_ORIGIN}}/mosque-finder", "provider": {"@type": "Organization", "name": "QiblaFind", "url": "{{LINK_ORIGIN}}/"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the mosque finder free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free, runs in your browser and needs no app or account."}}, {"@type": "Question", "name": "Why is a mosque missing from the map?", "acceptedAnswer": {"@type": "Answer", "text": "The map uses OpenStreetMap data, which volunteers maintain. Coverage varies by region, and anyone can add a missing mosque on openstreetmap.org."}}, {"@type": "Question", "name": "Can I search for mosques in another city?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Type the city's name into the search box to move the map there."}}, {"@type": "Question", "name": "Do I need to share my location?", "acceptedAnswer": {"@type": "Answer", "text": "No. Location shows mosques around you, but you can search for a city instead. Location is only used to calculate results and to look up the name of your city; no account is needed. See the QiblaFind privacy policy."}}]}</script>
+</head>
+<body>
+  <header class="site wrap">
+    <div class="kicker">Free web tool</div>
+    <h1>Mosque Finder Map</h1>
+    <p class="lead">Find mosques near you, or in any city you search for, on an interactive map. It works in the browser with no app or sign-up.</p>
+  </header>
+
+  <main class="wrap">
+    <div class="tool" style="--frame-h-mobile:760px;--frame-h-desktop:760px">
+      <iframe src="{{EMBED_ORIGIN}}/embed/mosque-finder" title="Mosque finder map" allow="geolocation"></iframe>
+      <a class="open-full" href="{{LINK_ORIGIN}}/mosque-finder">Open the full mosque finder →</a>
+    </div>
+
+    <section>
+      <h2>How to find a mosque</h2>
+      <ol>
+        <li>Allow location access to see mosques around you, or type a city name into the search box.</li>
+        <li>Pan and zoom the map. Each pin is a mosque.</li>
+        <li>Tap a pin to see the mosque's name.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Where the data comes from</h2>
+      <p>Mosque locations come from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, a free map built by volunteers. Coverage is good in well-mapped areas and patchier elsewhere. If a mosque you know is missing, you can add it to OpenStreetMap yourself.</p>
+      <p>Travelling? Check the <a href="{{LINK_ORIGIN}}/prayer-times">prayer times</a> for the city you are in, and find the <a href="{{LINK_ORIGIN}}/">Qibla direction</a> from wherever you stay.</p>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <h3>Is the mosque finder free?</h3>
+      <p>Yes. It is free, runs in your browser and needs no app or account.</p>
+      <h3>Why is a mosque missing from the map?</h3>
+      <p>The map uses OpenStreetMap data, which volunteers maintain. Coverage varies by region, and anyone can add a missing mosque on openstreetmap.org.</p>
+      <h3>Can I search for mosques in another city?</h3>
+      <p>Yes. Type the city's name into the search box to move the map there.</p>
+      <h3>Do I need to share my location?</h3>
+      <p>No. Location shows mosques around you, but you can search for a city instead. Location is only used to calculate results and to look up the name of your city; no account is needed. See the <a href="{{LINK_ORIGIN}}/privacy">QiblaFind privacy policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Add this widget to your website</h2>
+      <p>Help visitors find a nearby mosque, whether they are local or travelling. Copy the code below into any page. It is free to use and needs no sign-up or API key.</p>
+      <div class="card">
+        <pre id="embed-code">&lt;iframe src=&quot;{{LINK_ORIGIN}}/embed/mosque-finder&quot; title=&quot;Mosque finder map&quot; width=&quot;100%&quot; height=&quot;760&quot; style=&quot;border:0;max-width:100%&quot; loading=&quot;lazy&quot; allow=&quot;geolocation&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;font-size:13px&quot;&gt;&lt;a href=&quot;{{LINK_ORIGIN}}/mosque-finder&quot;&gt;Mosque finder&lt;/a&gt; by QiblaFind&lt;/p&gt;</pre>
+        <button class="copy" type="button" data-copy="embed-code" data-done="Copied">Copy embed code</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>This page is an open-source showcase of the QiblaFind mosque finder widget. The widget is provided by <a href="{{LINK_ORIGIN}}/">QiblaFind</a>, a free Qibla finder and prayer times site.</p>
+      <nav aria-label="More QiblaFind tools">
+        <a href="{{LINK_ORIGIN}}/">Online Qibla Finder</a>
+        <a href="{{LINK_ORIGIN}}/prayer-times">Prayer times</a>
+        <a href="{{LINK_ORIGIN}}/hijri-calendar">Hijri calendar</a>
+        <a href="{{LINK_ORIGIN}}/ramadan-{{RAMADAN_YEAR}}">Ramadan {{RAMADAN_YEAR}}</a>
+        <a href="{{LINK_ORIGIN}}/mosque-finder">Mosque finder</a>
+        <a href="{{LINK_ORIGIN}}/qibla-direction">Qibla direction by city</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

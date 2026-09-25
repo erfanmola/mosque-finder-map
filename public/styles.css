@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f6f4ec;
+  --surface: #ffffff;
+  --ink: #16211d;
+  --ink-soft: #55615c;
+  --line: #e2ded0;
+  --primary: #0f6e5c;
+  --gold: #b8862e;
+  --radius: 14px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1512;
+    --surface: #151e1a;
+    --ink: #edefec;
+    --ink-soft: #a7b1ac;
+    --line: #26332d;
+    --primary: #3ebda0;
+    --gold: #d6a650;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.6; }
+a { color: var(--primary); }
+.wrap { max-width: 52rem; margin-inline: auto; padding-inline: 1.25rem; }
+header.site { padding-block: 2rem 1rem; }
+.kicker { color: var(--gold); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.02em; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; margin: 0.25rem 0 0.75rem; }
+.lead { color: var(--ink-soft); font-size: 1.08rem; margin: 0; }
+.tool { margin-block: 1.5rem 2rem; }
+.tool iframe {
+  display: block;
+  inline-size: 100%;
+  block-size: var(--frame-h-mobile);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+@media (min-width: 640px) { .tool iframe { block-size: var(--frame-h-desktop); } }
+.tool .open-full { display: inline-block; margin-top: 0.75rem; font-weight: 600; }
+section { margin-block: 2.25rem; }
+h2 { font-size: 1.35rem; margin: 0 0 0.6rem; }
+h3 { font-size: 1.05rem; margin: 1.1rem 0 0.3rem; }
+ol, ul { padding-inline-start: 1.25rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.25rem; }
+pre { margin: 0; overflow-x: auto; white-space: pre-wrap; word-break: break-all; font-size: 0.85rem; }
+.copy { margin-top: 0.75rem; padding: 0.55rem 1rem; border-radius: 999px; border: 1px solid var(--primary); background: transparent; color: var(--primary); font: inherit; font-weight: 600; cursor: pointer; }
+footer.site { border-top: 1px solid var(--line); margin-top: 3rem; padding-block: 1.5rem 2.5rem; color: var(--ink-soft); font-size: 0.92rem; }
+footer.site nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: 0.5rem; }
